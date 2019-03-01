@@ -6,7 +6,7 @@ public class Main
 	
 	public static double distance(double latA, double lonA, double latB, double lonB)//from A to B
 	{
-	    int radius = 6371;//Dünyanın yarıçapı km
+	    int radius = 6371;//Radius of the Earth in km
 	    
 	    double latDistance = Math.toRadians(latB - latA);
 	    double lonDistance = Math.toRadians(lonB - lonA);
@@ -17,6 +17,6 @@ public class Main
 	               
 	   double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 	   
-	   return c * radius;//km
+	   return c * radius;//in km
 	}
 }
